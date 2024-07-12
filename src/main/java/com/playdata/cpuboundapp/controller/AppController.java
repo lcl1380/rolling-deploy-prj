@@ -19,10 +19,10 @@ public class AppController {
         return input;
     }
 
-    // @RequestMapping("/hello")
-    // public String hello() {
-    //     return "<h1 style='color:blue;'>변경 완료!</h1><p>마지막 업데이트 : 24.07.12</p><p>오후 1시 15분</p>";
-    // }
+    @RequestMapping("/hello")
+    public String hello() {
+        return "<h1 style='color:blue;'>변경 완료!</h1><p>마지막 업데이트 : 24.07.12</p><p>오후 1시 40분</p>";
+    }
 
     private String getMD5Digest(String input) throws NoSuchAlgorithmException {
         MessageDigest md = MessageDigest.getInstance("MD5");
